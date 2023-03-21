@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #fffce6;
+  --blue: #224668;
+  --red: #da6780;
+  --green: #c2e9d7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--green);
+}
+
+header {
+  display: flex;
+  padding: 30px;
+  background-color: var(--blue);
+  color: var(--green);
+  justify-content: space-between;
+  padding-left: 3%;
+  
+}
+
+header a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons li {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 28px;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+nav {
+  display: block;
+}
+
+header nav {
+  padding-right: 3%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+}
+
+.hero-banner {
+  background-image: url(https://i.ibb.co/VmKsv9X/1ziqa02krq9xho1mba1l.webp);
+  background-size: cover;
+  height: 250px;
+}
+
+.hero-banner h2 {
+  font-size: 35px;
+  display: flex;
+  background-color: var(--blue);
+  color: var(--green);
+  position: absolute;
+  right: 15px;
+  top: 290px;
+  padding: 20px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 20% 60%;
+  gap: 5%;
+  margin: 50px auto 50px auto;
+  width: 90%;
+  height: 100%;
+  background-color: var(--cream);
+  padding: 30px;
+  padding-bottom: 30px;
+}
+
+.page-section {
+  font-size: 35px;
+  text-align: end;
+  color: var(--blue);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.pfp {
+  border: 7px solid var(--blue);
+  float: left;
+  margin: 0 2% 2% 0;
+  width: 300px;
+  max-width: 90%;
+}
+
+p {
+  color: var(--blue);
+}
+
+#all-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 300px 300px;
+  grid-template-areas:
+  "gal1 gal1"
+  "gal2 gal3"
+  "gal4 gal5";
+  width: 100%;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 7px solid var(--blue);
+  position: relative;
+  
+}
+
+figure {
+  margin: 0 2% 2% 0;
+}
+
+figcaption {
+  position: absolute;
+  background-color: #224668;
+  color: var(--green);
+  padding: 10px;
+  font-size: 30px;
+  bottom: 20px;
+}
+
+.gal1 {
+  grid-area: gal1;
+}
+.gal2{
+  grid-area: gal2;
+}
+.gal3 {
+  grid-area: gal3;
+}
+.gal4 {
+  grid-area: gal4;
+}
+.gal5 {
+  grid-area: gal5;
+}
+
+.contactnav {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  color: var(--blue);
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
